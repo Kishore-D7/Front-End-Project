@@ -1,0 +1,128 @@
+/* Container */
+.container {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Start from top */
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Page Title */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #222;
+}
+
+/* Cart Button */
+.cartButton {
+  margin-bottom: 40px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cartButton:hover {
+  background-color: #005bb5;
+}
+
+/* Products Grid */
+.productsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 30px;
+}
+
+/* Product Card */
+.productCard {
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: white;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content inside card */
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Image */
+.productImage img {
+  width: 100%; /* Full width */
+  height: 160px;
+  object-fit: cover; /* Cover area */
+  display: block;
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover .productImage img {
+  transform: scale(1.05);
+}
+
+/* Product Details */
+.productName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0 5px;
+  text-align: center;
+}
+
+.productPrice {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0070f3;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.addButton,
+.quantityButton {
+  padding: 6px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.addButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.addButton:hover {
+  background-color: #218838;
+}
+
+.quantityButton {
+  background-color: #0070f3;
+  color: white;
+}
+
+.quantityButton:hover {
+  background-color: #005bb5;
+}
+
+.quantityDisplay {
+  margin: 0 10px;
+  font-weight: bold;
+}
